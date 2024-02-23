@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    tuner
+{% endblock %}
+
+{% block main %}
+<section id="post-body">
+    <p>
+        <canvas class="visualizer" width="640" height="100"></canvas>
+        <br>
+        <button id="init" onclick="init()">Start</button>
+    </p>
+    <h1 id="pitch">Pitch: Too quiet...</h1>
+    <h1 id="note">Note: Too quiet...</h1> <!-- Added note display -->
+</section>
+
+<script src="/static/pitch-detection.js"></script>
+{% endblock %}

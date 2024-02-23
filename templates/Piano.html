@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Piano
+{% endblock %}
+
+{% block main %}
+<div class="background-blur"></div>
+<div class="position-piano">
+
+    <!--OCTAVE 1-->
+    <button onclick="playNote('C3')" class="key white"></button>
+    <button onclick="playNote('C#3')" class="key black"></button>
+    <button onclick="playNote('D3')" class="key white"></button>
+    <button onclick="playNote('D#3')" class="key black"></button>
+    <button onclick="playNote('E3')" class="key white"></button>
+    <button onclick="playNote('F3')" class="key white"></button>
+    <button onclick="playNote('F#3')" class="key black"></button>
+    <button onclick="playNote('G3')" class="key white"></button>
+    <button onclick="playNote('G#3')" class="key black"></button>
+    <button onclick="playNote('A3')" class="key white"></button>
+    <button onclick="playNote('Bb3')" class="key black"></button>
+    <button onclick="playNote('B3')" class="key white"></button>
+    <!--OCTAVE 2-->
+    <button onclick="playNote('C')" class="key white"></button>
+    <button onclick="playNote('C#')" class="key black"></button>
+    <button onclick="playNote('D')" class="key white"></button>
+    <button onclick="playNote('D#')" class="key black"></button>
+    <button onclick="playNote('E')" class="key white"></button>
+    <button onclick="playNote('F')" class="key white"></button>
+    <button onclick="playNote('F#')" class="key black"></button>
+    <button onclick="playNote('G')" class="key white"></button>
+    <button onclick="playNote('G#')" class="key black"></button>
+    <button onclick="playNote('A')" class="key white"></button>
+    <button onclick="playNote('Bb')" class="key black"></button>
+    <button onclick="playNote('B')" class="key white"></button>
+    <!--LETTERS-->
+    <div class="letter-container">
+    <p class="letter">C</p>
+    <p class="letter">D</p>
+    <p class="letter">E</p>
+    <p class="letter">F</p>
+    <p class="letter">G</p>
+    <p class="letter">A</p>
+    <p class="letter">B</p>
+    <p class="letter">C</p>
+    <p class="letter">D</p>
+    <p class="letter">E</p>
+    <p class="letter">F</p>
+    <p class="letter">G</p>
+    <p class="letter">A</p>
+    <p class="letter">B</p>
+    </div>
+
+</div>
+
+<audio id="C3" src="/static/C3.mp3"></audio>
+<audio id="C#3" src="/static/Db3.mp3"></audio>
+<audio id="D3" src="/static/D3.mp3"></audio>
+<audio id="D#3" src="/static/Eb3.mp3"></audio>
+<audio id="E3" src="/static/E3.mp3"></audio>
+<audio id="F3" src="/static/F3.mp3"></audio>
+<audio id="F#3" src="/static/Gb3.mp3"></audio>
+<audio id="G3" src="/static/G3.mp3"></audio>
+<audio id="G#3" src="/static/Ab3.mp3"></audio>
+<audio id="A3" src="/static/A3.mp3"></audio>
+<audio id="Bb3" src="/static/Bb3.mp3"></audio>
+<audio id="B3" src="/static/B3.mp3"></audio>
+
+<audio id="C" src="/static/C4.mp3"></audio>
+<audio id="C#" src="/static/Cs4.mp3"></audio>
+<audio id="D" src="/static/D4.mp3"></audio>
+<audio id="D#" src="/static/Ds4.mp3"></audio>
+<audio id="E" src="/static/E4.mp3"></audio>
+<audio id="F" src="/static/F4.mp3"></audio>
+<audio id="F#" src="/static/Fs4.mp3"></audio>
+<audio id="G" src="/static/G4.mp3"></audio>
+<audio id="G#" src="/static/Gs4.mp3"></audio>
+<audio id="A" src="/static/A4.mp3"></audio>
+<audio id="Bb" src="/static/Bb4.mp3"></audio>
+<audio id="B" src="/static/B4.mp3"></audio>
+
+
+<script src="/static/script.js"></script>
+{% endblock %}

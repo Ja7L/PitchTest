@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stock Info
+{% endblock %}
+
+{% block main %}
+<div class="center">
+    <div class="title-heading">
+        <h1>Tune Any Instrument<span>.</span></h1>
+    </div>
+</div>
+<div class="PianoTwoOct">
+<img  src="/static/twoOctavePiano.png" id="pianoImage" title="Piano">
+</div>
+
+<div class="cards-pre">
+    <div class="cards_container">
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Tuner</h2>
+                <p>Tuner your instrument! Check your singing!
+                </p>
+
+                <a href="/pitchtest">Go!</a>
+            </div>
+
+        </div>
+        <div class="cards_container">
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <h2>Piano</h2>
+                    <p>Play key!
+                    </p>
+
+                    <a href="/Piano">Go!</a>
+                </div>
+
+            </div>
+            <div class="cards_container">
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>Keyboard Piano</h2>
+                        <p>Play any song!
+                        </p>
+
+                        <a href="/keyboardPiano">Go!</a>
+                    </div>
+
+                </div>
+</div>
+<script src="static/script.js"></script>
+{% endblock %}
