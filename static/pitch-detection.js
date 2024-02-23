@@ -123,8 +123,8 @@
             analyser.getFloatTimeDomainData(buffer);
             const pitch = autoCorrelate(buffer, audioContext.sampleRate);
 
-            let pitchDisplay = 'Too quiet...';
-            let noteDisplay = 'Too quiet...';
+            let pitchDisplay = 'Too quiet';
+            let noteDisplay = 'Too quiet';
             if (pitch !== -1) {
                 const roundedPitch = Math.round(pitch);
                 pitchDisplay = `Pitch: ${roundedPitch} Hz`;
