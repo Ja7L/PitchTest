@@ -18,7 +18,6 @@ nav .navbar-brand
     font-size: xx-large;
 }
 
-/* Colors for brand */
 nav .navbar-brand .blue
 {
     color: #537fbe;
@@ -360,8 +359,6 @@ canvas {
     text-decoration: none;
     font-weight: 700;
 }
-
-
 
 .pitch {
     height: 30px;
