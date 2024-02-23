@@ -6,7 +6,7 @@ This project is a web app designed to function as a tuner, displaying the closes
 
 ## Project details
 * This project was made with Flask (Flask & Flask-Session)
-* The bulk of the tuner was implemented in pitch-detection.js
+* The bulk of the tuner was implemented in [pitch-detection.js](/static/pitch-detection.js)
 
 ## License
 This project is licensed under the MIT license.
