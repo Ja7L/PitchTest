@@ -10,7 +10,7 @@ This project is a web app designed to function as a tuner, displaying the closes
 
 ## How to use
 Note: This project is not hosted on a website currently, so you will have to run it on your own system.
-To begin, download the code and install necessary python libraries- Flask <br>
+To begin, download the code and install necessary python libraries (Flask) <br>
 ```pip install flask```<br>
 Then open the folder and run ```python app.py``` in the terminal.
 
