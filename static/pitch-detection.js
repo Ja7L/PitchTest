@@ -58,7 +58,7 @@
                 }
             )
             .catch(function (err) {
-                alert('Microphone Required');
+                alert('Microphone Permissions Required' + " (" + err + ")");
             });
     }
 
