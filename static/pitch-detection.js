@@ -66,8 +66,7 @@
 
     var canvasContext = canvas.getContext("2d");
 
-    function visualize() {
-      
+    function visualize() {  
         var WIDTH;
         var HEIGHT;
       
@@ -118,7 +117,6 @@
         drawFrequency();
 
         const drawNote = () => {
-            const drawVisual = requestAnimationFrame(drawNote);
             const bufferLength = analyser.fftSize;
             const buffer = new Float32Array(bufferLength);
             analyser.getFloatTimeDomainData(buffer);
