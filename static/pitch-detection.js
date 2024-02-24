@@ -66,10 +66,11 @@
 
     var canvasContext = canvas.getContext("2d");
 
-    var WIDTH;
-    var HEIGHT;
-
     function visualize() {
+      
+        var WIDTH;
+        var HEIGHT;
+      
         WIDTH = canvas.width;
         HEIGHT = canvas.height;
 
@@ -146,7 +147,7 @@
   
   // AutoCorrelate from https://github.com/cwilso/PitchDetect/pull/23
   
-  function autoCorrelate(buffer, sampleRate) {
+function autoCorrelate(buffer, sampleRate) {
   
     var SIZE = buffer.length;
     var sumOfSquares = 0;
