@@ -2,7 +2,6 @@ function playNote(noteName) {
     var audio = document.getElementById(noteName)
     audio.currentTime = 0;
     audio.play();
-
 }
 
 function keyPressed() {
@@ -13,6 +12,7 @@ function keyPressed() {
 const LINEARGRADIENT = "linear-gradient(150deg, #7d5fff, #ff73a1)";
 
 document.addEventListener('keydown', function(event) {
+    
     if (event.key.toLowerCase() == 'a') {
         playNote('C3');
         letter = document.getElementById('1');
@@ -73,10 +73,6 @@ document.addEventListener('keydown', function(event) {
         letter = document.getElementById('12');
         letter.style.backgroundImage = LINEARGRADIENT;
     }
-
-
-
-
 
     if (event.key.toLowerCase() == 'k') {
         playNote('C');
@@ -141,7 +137,9 @@ document.addEventListener('keydown', function(event) {
     }
 
 });
+
 document.addEventListener('keyup', function(event) {
+    
     if (event.key.toLowerCase() == 'a') {
         letter = document.getElementById('1');
         letter.style.backgroundImage = "";
@@ -239,4 +237,5 @@ document.addEventListener('keyup', function(event) {
         letter = document.getElementById('24');
         letter.style.backgroundImage = "";
     }
+    
 });
