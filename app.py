@@ -4,16 +4,7 @@ from flask_session import Session
 # Configure application
 app = Flask(__name__)
 
-'''
-@app.after_request
-def after_request(response):
-    """Ensure responses aren't cached"""
-    response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
-    response.headers["Expires"] = 0
-    response.headers["Pragma"] = "no-cache"
-    return response
-'''
-
+# Set-up all routes
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -23,9 +14,8 @@ def tuner():
     if request.method=="GET":
         return render_template("tuner.html")
 
-@app.route("/pitchtest", methods=["GET", "POST"])
+@app.route("/pitchtest", methods=["GET"])
 def pitchtest():
-    """Get stock quote."""
     if request.method == "GET":
         return render_template("pitchtest.html")
 
@@ -36,4 +26,5 @@ def Piano():
 
 @app.route("/keyboardPiano", methods=["GET"])
 def keyboardPiano():
-    return render_template("keyboardPiano.html")
+    if request.method=="GET":
+        return render_template("keyboardPiano.html")
