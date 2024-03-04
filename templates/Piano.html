@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block main %}
+
 <div class="background-blur"></div>
 <div class="position-piano">
 
@@ -21,6 +22,7 @@
     <button onclick="playNote('A3')" class="key white"></button>
     <button onclick="playNote('Bb3')" class="key black"></button>
     <button onclick="playNote('B3')" class="key white"></button>
+    
     <!--OCTAVE 2-->
     <button onclick="playNote('C')" class="key white"></button>
     <button onclick="playNote('C#')" class="key black"></button>
@@ -34,6 +36,7 @@
     <button onclick="playNote('A')" class="key white"></button>
     <button onclick="playNote('Bb')" class="key black"></button>
     <button onclick="playNote('B')" class="key white"></button>
+    
     <!--LETTERS-->
     <div class="letter-container">
     <p class="letter">C</p>
@@ -51,9 +54,9 @@
     <p class="letter">A</p>
     <p class="letter">B</p>
     </div>
-
 </div>
 
+<!--Octave One Audio-->
 <audio id="C3" src="/static/C3.mp3"></audio>
 <audio id="C#3" src="/static/Db3.mp3"></audio>
 <audio id="D3" src="/static/D3.mp3"></audio>
@@ -67,6 +70,7 @@
 <audio id="Bb3" src="/static/Bb3.mp3"></audio>
 <audio id="B3" src="/static/B3.mp3"></audio>
 
+<!--Octave Two Audio-->
 <audio id="C" src="/static/C4.mp3"></audio>
 <audio id="C#" src="/static/Cs4.mp3"></audio>
 <audio id="D" src="/static/D4.mp3"></audio>
@@ -79,7 +83,6 @@
 <audio id="A" src="/static/A4.mp3"></audio>
 <audio id="Bb" src="/static/Bb4.mp3"></audio>
 <audio id="B" src="/static/B4.mp3"></audio>
-
 
 <script src="/static/script.js"></script>
 {% endblock %}
