@@ -38,11 +38,14 @@
     }
 
     var mic;
+    var MINDECIBELS = -100;
+    var MAXDECIBELS = -10;
+    var SMOOTHING = 0.85;
     var audioContext = new (window.AudioContext || window.webkitAudioContext)();
     var analyser = audioContext.createAnalyser();
-    analyser.minDecibels = -100;
-    analyser.maxDecibels = -10;
-    analyser.smoothingTimeConstant = 0.85;
+    analyser.minDecibels = MINDECIBELS;
+    analyser.maxDecibels = MAXDECIBELS;
+    analyser.smoothingTimeConstant = SMOOTHING;
     if (!navigator?.mediaDevices?.getUserMedia) {
         // No audio allowed
         alert('getUserMedia is required')
